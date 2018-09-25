@@ -102,3 +102,7 @@ install:
 ```
 
 Travis will deploy artifacts from Linux and OS X, AppVeyor will deploy artifacts from Windows.
+
+## Original Project: 
+
+https://github.com/forexample/github-binary-release
