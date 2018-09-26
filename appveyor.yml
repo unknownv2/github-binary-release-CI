@@ -45,13 +45,13 @@ build_script:
 artifacts:
   - path: _builds\*\Foo-*.tar.gz
     name: Releases
-
+    
 deploy:
-    description: 'release description'
-    provider: GitHub
-    auth_token:
-      secure: 99ssBJ/lNK6AL1FNajtOhloP5bXeUAm8m+cI0us6pW1hVw84MTKxwYzfurYMuaOQ
-    draft: true
-    prerelease: false
-    on:
-      appveyor_repo_tag: true
+  provider: GitHub
+  description: "Test Deployment"
+  auth_token:
+    secure: 99ssBJ/lNK6AL1FNajtOhloP5bXeUAm8m+cI0us6pW1hVw84MTKxwYzfurYMuaOQ
+  draft: false
+  prerelease: false
+  on:
+    appveyor_repo_tag: true
