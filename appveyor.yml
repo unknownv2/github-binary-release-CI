@@ -47,13 +47,11 @@ artifacts:
     name: Releases
 
 deploy:
-  - provider: GitHub
+    description: 'release description'
+    provider: GitHub
     auth_token:
       secure: 99ssBJ/lNK6AL1FNajtOhloP5bXeUAm8m+cI0us6pW1hVw84MTKxwYzfurYMuaOQ
-    artifact: /Foo-.*\.tar.gz/
-    draft: false
+    draft: true
     prerelease: false
-    force_update: true
     on:
-      branch: master
       appveyor_repo_tag: true
