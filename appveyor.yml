@@ -45,7 +45,7 @@ build_script:
 artifacts:
   - path: _builds\*\Foo-*.tar.gz
     name: Releases
-    
+
 deploy:
   provider: GitHub
   description: "Test Deployment"
@@ -53,5 +53,6 @@ deploy:
     secure: 99ssBJ/lNK6AL1FNajtOhloP5bXeUAm8m+cI0us6pW1hVw84MTKxwYzfurYMuaOQ
   draft: false
   prerelease: false
+  tag: $(APPVEYOR_REPO_TAG_NAME)
   on:
     appveyor_repo_tag: true
